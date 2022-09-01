@@ -1,0 +1,583 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.hero {
+  background: url(../images/desktop/image-header.jpg) center no-repeat;
+  padding-bottom: 300px;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 50px;
+}
+
+.hero-icon {
+  display: block;
+  margin: 80px auto 0;
+}
+
+.hero .nav-mobile {
+  display: none;
+}
+
+.hero nav {
+  padding: 30px;
+  padding-right: 40px;
+}
+
+.hero nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.hero nav ul img {
+  display: none;
+}
+
+.hero nav ul .nav-brand {
+  padding-top: 20px;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.hero nav ul .nav-item {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.hero nav ul .nav-item a {
+  color: unset;
+  text-decoration: none;
+}
+
+.hero nav ul .nav-item a :visited {
+  color: unset;
+  text-decoration: none;
+}
+
+.hero nav ul .nav-item:nth-child(5) {
+  background-color: white;
+  color: #23303e;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero nav ul .nav-item:nth-child(5):hover {
+  background-color: #49abd4;
+  color: white;
+}
+
+#about, .about-2 {
+  color: #23303e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about h4::after, .about-2 h4::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 105px;
+  left: 95px;
+  bottom: 197px;
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+#about h4::after:hover, .about-2 h4::after:hover {
+  opacity: 1;
+}
+
+#about h4::after {
+  background-color: #fad400;
+}
+
+.about-2 h4::after {
+  background-color: #fe7867;
+}
+
+.abt {
+  padding: 200px 100px 200px;
+  position: relative;
+}
+
+.abt h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 70%;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+.abt p {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.abt h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-graphic {
+  background: url(../images/desktop/image-graphic-design.jpg);
+  color: #25564b;
+}
+
+.services-photography {
+  background: url(../images/desktop/image-photography.jpg);
+  color: #19536b;
+}
+
+.services-graphic, .services-photography {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 500px;
+  width: 50%;
+  text-align: center;
+}
+
+.services-graphic .serve, .services-photography .serve {
+  position: absolute;
+  top: 350px;
+}
+
+.services-graphic .serve h3, .services-photography .serve h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.services-graphic .serve p, .services-photography .serve p {
+  font-size: 1rem;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.testimonial {
+  padding: 10% 9.5%;
+}
+
+.testimonial-head {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #a7abae;
+  margin-bottom: 60px;
+}
+
+.testimonial-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial-card .testimonial-img {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-bottom: 60px;
+}
+
+.testimonial-card .testimonial-text {
+  text-align: center;
+  font-size: 1rem;
+  width: 85%;
+  margin: 0 auto;
+  color: #5a636c;
+  margin-bottom: 65px;
+}
+
+.testimonial-card .testimonial-name {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: #23303e;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .testimonial-job {
+  text-align: center;
+  color: #a7abae;
+  font-size: .8rem;
+}
+
+.gallery-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-desktop-img {
+  width: 25%;
+}
+
+.gallery-mobile {
+  display: none;
+}
+
+footer {
+  background-color: #2c756655;
+  padding: 4% 15% 1%;
+}
+
+footer .brand {
+  color: #2c7566;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  cursor: default;
+}
+
+footer ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+footer ul .footer-link {
+  padding: 20px;
+  margin-bottom: 50px;
+  color: #25564b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer ul .footer-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+footer .social-icons {
+  text-align: center;
+}
+
+footer .social-icons img {
+  padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+footer .social-icons img:hover {
+  visibility: hidden;
+}
+
+footer .social-icons2 {
+  position: relative;
+  bottom: 65px;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer .social-icons2 img {
+  padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .social-icons2 img:hover {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: #3e52a3;
+  }
+  
+  .hero {
+    background: url(../images/mobile/image-header.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+  
+  .hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 54px;
+  }
+  
+  .hero-icon {
+    margin: 0 auto 0;
+    padding-bottom: 160px;
+  }
+  
+  .hero nav {
+    padding: 30px;
+    padding-right: 40px;
+  }
+  
+  .hero nav ul img {
+    display: inline-block;
+    height: fit-content;
+    padding-top: 8PX;
+  }
+  
+  .hero nav ul .nav-brand {
+    padding-top: 0;
+  }
+  
+  .hero nav ul .nav-item {
+    display: none;
+    padding: 20px;
+    font-size: 1rem;
+  }
+  
+  #about, .about-2 {
+    flex-direction: column-reverse;
+  }
+
+  .about-2 {
+    flex-direction: column;
+  }
+  
+  #about h4::after, .about-2 h4::after {
+    left: 135px;
+    bottom: 51px;
+  }
+  
+  .abt {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .abt h2 {
+    width: 100%;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+  
+  .services {
+    flex-direction: column;
+  }
+  
+  .services-graphic {
+    background: url(../images/desktop/image-graphic-design.jpg);
+    color: #25564b;
+  }
+  
+  .services-photography {
+    background: url(../images/desktop/image-photography.jpg);
+    color: #19536b;
+  }
+  
+  .services-graphic, .services-photography {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .services-graphic .serve, .services-photography .serve {
+    position: absolute;
+    top: 350px;
+  }
+  
+  .services-graphic .serve h3, .services-photography .serve h3 {
+    font-size: 2.3rem;
+  }
+  
+  .services-graphic .serve p, .services-photography .serve p {
+    font-size: .8rem;
+    font-weight: bolder;
+    padding: 0.2rem;
+    width: 100%;
+  }
+  
+  .testimonial {
+    padding: 10% 9.5%;
+  }
+  
+  .testimonial-head {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #a7abae;
+    margin-bottom: 60px;
+  }
+  
+  .testimonial-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .testimonial-card .testimonial-img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .testimonial-card .testimonial-text {
+    text-align: center;
+    font-size: 1rem;
+    width: 85%;
+    margin: 0 auto;
+    color: #5a636c;
+    margin-bottom: 65px;
+  }
+  
+  .testimonial-card .testimonial-name {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #23303e;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card .testimonial-job {
+    text-align: center;
+    color: #a7abae;
+    font-size: .8rem;
+  }
+  
+  .gallery-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .gallery-desktop-img {
+    width: 25%;
+  }
+  
+  .gallery-mobile {
+    display: none;
+  }
+  
+  footer {
+    background-color: #2c756655;
+    padding: 4% 15% 1%;
+  }
+  
+  footer .brand {
+    color: #2c7566;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    cursor: default;
+  }
+  
+  footer ul {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+  }
+  
+  footer ul .footer-link {
+    padding: 20px;
+    margin-bottom: 50px;
+    color: #25564b;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  footer ul .footer-link:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer .social-icons {
+    text-align: center;
+  }
+  
+  footer .social-icons img {
+    padding: 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  footer .social-icons img:hover {
+    visibility: hidden;
+  }
+  
+  footer .social-icons2 {
+    position: relative;
+    bottom: 65px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  footer .social-icons2 img {
+    padding: 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  footer .social-icons2 img:hover {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=main.css.map */
